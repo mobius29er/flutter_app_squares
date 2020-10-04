@@ -113,13 +113,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.green,
                     width: 300,
                     child: new Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
                           'You have pushed the button this many times:',
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                         Text(
                           '$_counter',
-                          style: Theme.of(context).textTheme.headline4,
+                          style: TextStyle(
+                              fontSize: 50,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ],
                     ),
@@ -128,9 +137,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 Expanded(
                   flex: size,
                   child: Container(
-                    color: Colors.yellow,
-                    width: 300,
-                  ),
+                      color: Colors.yellow,
+                      width: 300,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            color: Colors.orange,
+                            child: FlutterLogo(
+                              size: 60.0,
+                            ),
+                          ),
+                          Container(
+                            color: Colors.blue,
+                            child: FlutterLogo(
+                              size: 60.0,
+                            ),
+                          ),
+                          Container(
+                            color: Colors.purple,
+                            child: FlutterLogo(
+                              size: 60.0,
+                            ),
+                          ),
+                        ],
+                      )),
                 ),
               ],
             ),
