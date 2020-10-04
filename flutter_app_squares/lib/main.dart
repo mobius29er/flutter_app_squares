@@ -105,6 +105,29 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     color: Colors.red,
                     width: 300,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          color: Colors.orange,
+                          child: FlutterLogo(
+                            size: 60.0,
+                          ),
+                        ),
+                        Container(
+                          color: Colors.blue,
+                          child: FlutterLogo(
+                            size: 60.0,
+                          ),
+                        ),
+                        Container(
+                          color: Colors.purple,
+                          child: FlutterLogo(
+                            size: 60.0,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
@@ -161,7 +184,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ],
-                      )),
+                      ),
+                  ),
                 ),
               ],
             ),
@@ -169,7 +193,36 @@ class _MyHomePageState extends State<MyHomePage> {
               flex: 1,
               child: Container(
                 color: Colors.purple,
-                width: 100,
+                width: 300,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      color: Colors.orange,
+                      child: FlutterLogo(
+                        size: 60.0,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.blue,
+                      child: FlutterLogo(
+                        size: 60.0,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.red,
+                      child: FlutterLogo(
+                        size: 60.0,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      child: FlutterLogo(
+                        size: 60.0,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
