@@ -98,13 +98,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           //mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            /*Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),*/
             Column(
               children: <Widget>[
                 Expanded(
@@ -119,6 +112,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     color: Colors.green,
                     width: 300,
+                    child: new Column(
+                      children: <Widget>[
+                        Text(
+                          'You have pushed the button this many times:',
+                        ),
+                        Text(
+                          '$_counter',
+                          style: Theme.of(context).textTheme.headline4,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
